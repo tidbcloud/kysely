@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.x.x
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: pnpm
+
+      - name: install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: check fmt
+        run: pnpm fmt-check
+      - name: check type
+        run: pnpm type-check
+      - name: build
+        run: pnpm build
