@@ -28,8 +28,8 @@
   ],
   "scripts": {
     "build": "tsup",
-    "fmt": "prettier --write /src",
-    "fmt-check": "prettier --check /src",
+    "fmt": "prettier --write ./src",
+    "fmt-check": "prettier --check ./src",
     "type-check": "tsc --noEmit"
   },
   "peerDependencies": {
