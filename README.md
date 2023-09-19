@@ -1,6 +1,6 @@
 # kysely-tidbcloud
 
-[Kysely](https://github.com/koskimas/kysely) dialect for TiDB serverless, using the [TiDB serverless driver](https://github.com/tidbcloud/serverless-js).
+[Kysely](https://github.com/koskimas/kysely) dialect for TiDB Cloud, using the [TiDB Cloud serverless driver](https://github.com/tidbcloud/serverless-js).
 
 It is designed to be used on the edge, like Vercel Edge Functions, Cloudflare Workers, Netlify Edge Functions, etc.
 
@@ -86,7 +86,7 @@ try{
 
 ## Configuration
 
-The TiDB serverless dialect accepts the same configurations as TiDB serverless driver. For example: You can customize the `fetch` in node.js:
+The TiDB Cloud dialect accepts the same configurations as TiDB Cloud serverless driver. For example: You can customize the `fetch` in node.js:
 
 ```ts
 import { Kysely } from 'kysely'
@@ -101,4 +101,4 @@ const db = new Kysely<Database>({
 })
 ```
 
-See [TiDB serverless driver configuration](https://github.com/tidbcloud/serverless-js#configuration) for the all configurations.
+See [TiDB Cloud serverless driver configuration](https://github.com/tidbcloud/serverless-js#configuration) for the all configurations.
