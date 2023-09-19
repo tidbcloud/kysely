@@ -43,7 +43,7 @@ interface PersonTable {
   gender: "male" | "female" | "other"
 }
 
-// Dialects
+// Dialect
 const db = new Kysely<Database>({
   dialect: new TiDBServerlessDialect({
     url: process.env.DATABASE_URL
@@ -99,9 +99,6 @@ const db = new Kysely<Database>({
     fetch
   }),
 })
-
 ```
-
-
 
 See [TiDB Cloud serverless driver configuration](https://github.com/tidbcloud/serverless-js#configuration) for the all configurations.
