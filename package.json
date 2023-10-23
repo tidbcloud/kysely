@@ -1,6 +1,6 @@
 {
   "name": "@tidbcloud/kysely",
-  "description": "Kysely dialect for TiDB Serverless",
+  "description": "Kysely dialect for TiDB Cloud serverless driver",
   "version": "0.0.4",
   "repository": "git@github.com:tidbcloud/kysely.git",
   "author": "tidbcloud",
@@ -21,10 +21,18 @@
   ],
   "keywords": [
     "kysely",
+    "TiDB",
     "TiDB Cloud",
     "serverless",
-    "mysql",
-    "edge"
+    "MySQL",
+    "edge",
+    "Vercel",
+    "Cloudflare",
+    "Netlify",
+    "Bun",
+    "Deno",
+    "database",
+    "SQL"
   ],
   "scripts": {
     "build": "tsup",
