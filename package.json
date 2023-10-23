@@ -21,10 +21,18 @@
   ],
   "keywords": [
     "kysely",
+    "TiDB",
     "TiDB Cloud",
     "serverless",
-    "mysql",
-    "edge"
+    "MySQL",
+    "edge",
+    "Vercel",
+    "Cloudflare",
+    "Netlify",
+    "Bun",
+    "Deno",
+    "database",
+    "SQL"
   ],
   "scripts": {
     "build": "tsup",
