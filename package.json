@@ -1,6 +1,6 @@
 {
   "name": "@tidbcloud/kysely",
-  "description": "Kysely dialect for TiDB Serverless",
+  "description": "Kysely dialect for TiDB Cloud serverless driver",
   "version": "0.0.4",
   "repository": "git@github.com:tidbcloud/kysely.git",
   "author": "tidbcloud",
