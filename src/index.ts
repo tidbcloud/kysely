@@ -1,5 +1,3 @@
-import { connect, Connection, Tx, Config, FullResult } from '@tidbcloud/serverless';
-
 import {
   CompiledQuery,
   DatabaseConnection,
@@ -8,11 +6,22 @@ import {
   Driver,
   Kysely,
   MysqlAdapter,
-  MysqlQueryCompiler,
   MysqlIntrospector,
+  MysqlQueryCompiler,
   QueryCompiler,
   QueryResult,
 } from 'kysely';
+import { Config, Connection, FullResult, Tx, connect } from '@tidbcloud/serverless';
+import {
+  cosineDistance,
+  cosineSimilarity,
+  innerProduct,
+  l1Distance,
+  l2Distance,
+  negativeInnerProduct,
+  vectorFromSql,
+  vectorToSql,
+} from './vector';
 
 /**
  * Config for the TiDB Serverless dialect.
@@ -171,3 +180,14 @@ class TiDBServerlessTransaction {
     await this.#tx.rollback();
   }
 }
+
+export {
+  cosineDistance,
+  cosineSimilarity,
+  innerProduct,
+  l1Distance,
+  l2Distance,
+  negativeInnerProduct,
+  vectorFromSql,
+  vectorToSql,
+};
